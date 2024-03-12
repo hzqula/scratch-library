@@ -1,0 +1,39 @@
+.white-background{
+    -fx-background-color: #fff;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.round-layout{
+    -fx-border-radius: 50px;
+    -fx-border-color: #D7D7D7;
+}
+
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 5);
+}
+
+.shadow-detailscene{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 5, 5);
+}
+
+.mouse-moved:hover{
+    -fx-background-color: #E4E4E4;
+}
+
+.button {
+    -fx-background-color: #fff;
+    -fx-border-radius: 45px;
+    -fx-border-color: #D7D7D7;
+}
+
+.button:hover {
+    -fx-background-color: #2EE59D;
+    -fx-border-radius: 45px;
+}
+
+
+

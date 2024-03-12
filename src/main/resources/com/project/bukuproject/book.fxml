@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="280.0" prefWidth="165.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.bukuproject.BookController">
+    <children>
+        <ImageView id="bookImage" fx:id="bookImage" fitHeight="166.0" fitWidth="117.0" pickOnBounds="true"
+                   preserveRatio="true" styleClass="round-layout">
+            <image>
+                <Image url="@../../../img/buku3.jpg"/>
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" prefHeight="88.0" prefWidth="176.0">
+            <children>
+                <Label id="Genre" fx:id="genre" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="15.0"
+                       prefWidth="116.0" text="Genre, genre" textAlignment="CENTER" textFill="#5fa5d9">
+                    <font>
+                        <Font name="Montserrat SemiBold Italic" size="10.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label fx:id="namaBuku" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="179.0"
+                       text="Sherlock&#10;&#10;&#10;" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="Montserrat ExtraBold" size="12.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                </Label>
+                <Label fx:id="namaPenulis" alignment="CENTER" layoutX="10.0" layoutY="48.0" prefHeight="15.0"
+                       prefWidth="116.0" text="Hartswood Films" textAlignment="CENTER" textFill="#9d9b9b">
+                    <font>
+                        <Font size="10.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="1.0"/>
+                    </padding>
+                </Label>
+                <Button fx:id="tombolDetail" mnemonicParsing="false" prefHeight="23.0" prefWidth="95.0"
+                        style="-fx-background-radius: 45;" stylesheets="@../../../css/styles.css" text="Detail Buku">
+                    <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0"/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="10.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+    <styleClass>
+        <String fx:value="white-background"/>
+        <String fx:value="shadow"/>
+        <String fx:value="mouse-moved"/>
+    </styleClass>
+    <stylesheets>
+        <URL value="@../../../css/styles.css"/>
+        <URL value="@../../../css/styles.css"/>
+    </stylesheets>
+</VBox>
